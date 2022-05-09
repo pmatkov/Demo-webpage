@@ -712,7 +712,7 @@ article {
     width: 70%;
     height: 1850px;
     padding: 4%;
-    border: black solid 1px;
+    border-top: black solid 1px;
     box-sizing: border-box;
     position: absolute;
     top: 150px;
@@ -724,7 +724,8 @@ aside {
     width: 30%;
     height: 1850px;
     padding: 4% 2%;
-    border: black solid 1px;
+    border-top: black solid 1px;
+    border-left: black solid 1px;
     background-color: #99D9EA;
     box-sizing: border-box;
     position: absolute;
