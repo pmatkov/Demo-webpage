@@ -12,6 +12,6 @@ The main requirements of the assignment were given as follows:
 - the choice of subject is free (I chose windsurfing, a sport I'm passionate about).
 
 Although not required by the assignment, I tried to make the webpage as visualy as appealing as I could, considering my limited proficiency with web design. 
-  \
-  \ 
+ <br>
+ <br>
 ![Screenshot of the webpage](web.png)
