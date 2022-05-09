@@ -13,5 +13,7 @@ The main requirements of the assignment were given as follows:
 
 Although not required by the assignment, I tried to make the webpage as visualy as appealing as I could, considering my limited proficiency with web design. 
   
+  
+   
    
 ![Screenshot of the webpage](web.png)
