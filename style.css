@@ -1,0 +1,801 @@
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 50%;
+    margin: 0 auto;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* header: 160 px - 20 + 140  */
+
+header {
+    height: 160px;
+}
+
+header div#hdr_top {
+    height: 20px;
+    background-color: #536C8C;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    box-sizing: border-box;
+}
+
+header div#hdr_bottom {
+    height: 140px;
+    background-color: #7f9ec7;
+    border-bottom: black solid 1px;
+    box-sizing: border-box;
+}
+
+/* navigacija i logo */
+
+header nav {
+    width: 30%;
+    max-width: 160px;
+    height: 120px;
+    margin: 10px 2%;
+    float: left;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a:link, nav a:visited {
+    height: 20px;
+    margin-bottom: 4px;
+    padding: 8px;
+    color: black;
+    background-color: #99D9EA;
+    border: black solid 1px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav a:hover {
+    background-color: #7aabb8;
+}
+
+
+header div#logo{
+    width: 50%;
+    height: 120px;
+    margin-right: 4%;
+    background-image: url('images/logo1.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+
+header div#icon{
+    width: 15%;
+    height: 120px;
+    background-image: url('images/icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 4%;
+    line-height: 120px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.8em;
+    font-style: italic;
+}
+
+/* glavni dio */
+
+main {
+    height: 100%;
+    background-color: #B1DBF5;
+}
+
+main nav {
+    height: 40px;
+    box-sizing: border-box;
+}
+
+main nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+main nav li {
+    width: 130px;
+    float: right;
+}
+
+main nav a:link, main nav a:visited {
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: black solid 1px;
+    color: black;
+    display: block;
+}
+
+main nav a:hover {
+    background-color: #7aabb8;
+}
+
+/* Prva skecija */
+
+section#first {
+    height: 740px;
+}
+
+section#first div.d1{
+    width: 55%;
+    height: 280px;
+    border: black solid 1px;
+    background-color: #99D9EA;
+    box-sizing: border-box;
+    position: relative;
+    top: 2%;
+    left: -6%;
+}
+
+section#first div.d2{
+    width: 35%;
+    height: 640px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 8%;
+    right: -4%;
+}
+
+section#first div.d3{
+    width: 55%;
+    height: 300px;
+    border: black solid 1px;
+    background-color: #7f9ec7;
+    box-sizing: border-box;
+    position: relative;
+    top: 6%;
+}
+
+div.d2a {
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+section#first div.d2a1 {
+    height: 52%;
+    margin-bottom: 2%;
+}
+
+section#first div.d2a2 {
+    height: 44%;
+    margin-bottom: 2%;
+}
+
+/* Druga skecija */
+
+section#second {
+    height: 750px;
+}
+
+section#second div.d1{
+    width: 50%;
+    height: 310px;
+    margin-top: 2%;
+    border: black solid 1px;
+    background-color: #99D9EA;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: -6%;
+}
+
+section#second div.d2{
+    width: 56%;
+    height: 660px;
+    box-sizing: border-box;
+    position: relative;
+    top: -4%;
+    left: -8%;
+}
+
+section#second div.d3{
+    width: 52%;
+    height: 280px;
+    border: black solid 1px;
+    background-color: #7f9ec7;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+
+section#second div.d2a1 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+section#second div.d2a2 {
+    height: 48%;
+}
+
+/* Treca skecija */
+
+section#third {
+    height: 750px;
+}
+
+
+section#third div.d1{
+    width: 40%;
+    height: 440px;
+    margin-top: 2%;
+    border: black solid 1px;
+    background-color: #99D9EA;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: -6%;
+}
+
+section#third div.d2{
+    width: 56%;
+    height: 650px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: -8%;
+}
+
+section#third div.d3{
+    width: 50%;
+    height: 270px;
+    border: black solid 1px;
+    background-color: #7f9ec7;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 8%;
+}
+
+section#third div.d2a1 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+section#third div.d2a2 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+/* Cetvrta skecija */
+
+section#fourth {
+    height: 750px;
+}
+
+
+section#fourth div.d1{
+    width: 34%;
+    height: 445px;
+    margin-top: 2%;
+    border: black solid 1px;
+    background-color: #99D9EA;
+    box-sizing: border-box;
+    float: right;
+}
+
+section#fourth div.d2{
+    width: 50%;
+    height: 650px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: -8%;
+}
+
+section#fourth div.d3{
+    width: 52%;
+    height: 300px;
+    border: black solid 1px;
+    background-color: #7f9ec7;
+    box-sizing: border-box;
+    position: absolute;
+    right: 4%;
+    bottom: 6%;
+}
+
+section#fourth div.d2a1 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+section#fourth div.d2a2 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+/* Peta skecija */
+
+section#fifth {
+    height: 800px;
+}
+
+section#fifth div.d1{
+    width: 38%;
+    height: 445px;
+    margin-top: 2%;
+    border: black solid 1px;
+    background-color: #99D9EA;
+    box-sizing: border-box;
+    position: absolute;
+    top: 4%;
+    left: -2%;
+}
+
+section#fifth div.d2{
+    width: 50%;
+    height: 660px;
+    box-sizing: border-box;
+    float: right;
+}
+
+section#fifth div.d3{
+    width: 52%;
+    height: 270px;
+    border: black solid 1px;
+    background-color: #7f9ec7;
+    box-sizing: border-box;
+    position: absolute;
+    left: -6%;
+    bottom: 8%;
+}
+
+section#fifth div.d2a1 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+section#fifth div.d2a2 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+/* Peta skecija */
+
+section#sixth {
+    height: 750px;
+}
+
+section#sixth div.d1{
+    width: 38%;
+    height: 445px;
+    margin-top: 2%;
+    border: black solid 1px;
+    background-color: #99D9EA;
+    box-sizing: border-box;
+    position: absolute;
+    top: 4%;
+    left: -2%;
+}
+
+section#sixth div.d2{
+    width: 50%;
+    height: 660px;
+    box-sizing: border-box;
+    float: right;
+}
+
+section#sixth div.d3{
+    width: 52%;
+    height: 270px;
+    border: black solid 1px;
+    background-color: #7f9ec7;
+    box-sizing: border-box;
+    position: absolute;
+    left: -6%;
+    bottom: 8%;
+}
+
+section#sixth div.d2a1 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+section#sixth div.d2a2 {
+    height: 48%;
+    margin-bottom: 2%;
+}
+
+/* Footer */
+
+footer {
+    height: 60px;
+}
+
+footer div#bottom {
+    background-color: #536C8C;
+    border-bottom: black solid 1px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* slike */
+
+div.d2 img {
+    border: black solid 1px;
+    box-sizing: border-box;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+section#first img.im1 {
+    max-width: 100%;
+    margin-bottom: 2%;
+}
+
+section#first img.im2{
+    max-width: 75%;
+    margin-left: 6%;
+}
+
+section#second img.im1 {
+    max-width: 58%;
+}
+
+section#second img.im2 {
+    max-width: 32%;
+    float: right;
+}
+
+section#second img.im3 {
+    max-width: 58%;
+    margin-left: 18%;
+}
+
+section#third img.im1 {
+    max-width: 50%;
+}
+
+section#third img.im2 {
+    float: right;
+    max-width: 45%;
+}
+
+section#third img.im3 {
+    max-width: 55%;
+    margin-right: 16%;
+    float: right;
+}
+
+section#fourth img.im1 {
+    max-width: 90%;
+    float: right;
+}
+
+section#fourth img.im2 {
+    max-width: 62%;
+}
+
+section#fifth img.im1 {
+    max-width: 62%;
+    margin-left: 6%;
+}
+
+section#fifth img.im2 {
+    max-width: 68%;
+    margin-right: 4%;
+    float: right;
+}
+
+
+section#sixth img.im1 {
+    max-width: 85%;
+}
+
+section#sixth img.im2 {
+    max-width: 75%;
+    margin-right: 4%;
+    float: right;
+}
+
+
+section {
+    position: relative; 
+}
+
+section#first, section#third, section#fifth {
+    margin-top: 4%;
+}
+
+section#second, section#fourth {
+    margin-top: 2%;
+}
+
+h4 {
+    margin-left: 5px;
+}
+
+
+h4.special {
+    padding-left: 2%;
+    font-weight: normal;
+}
+
+p {
+    padding: 1% 2%;
+}
+
+
+/* linkovi */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+
+header a {
+    font-style: italic;
+}
+
+main a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* tablica */
+
+table#center {
+    margin: 0 auto;
+}
+
+table {
+    border: 1px solid;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 4px;
+    border: 1px solid;
+}
+
+thead th {
+    padding: 10px;
+
+}
+
+tr.diff {
+    background-color: whitesmoke;
+}
+
+td.right {
+    text-align: right;
+}
+
+td#special1 {
+    font-weight: bold;
+    text-align: left;
+}
+
+td#special2 {
+    font-weight: bold;
+    text-align: right;
+}
+
+caption {
+    padding: 14px;
+}
+
+/* ---kontakt--- */
+
+main#kontakt {
+    min-height: 1800px;
+}
+
+address {
+      padding: 6% 10%;
+}
+
+section#forma {
+    width: 70%;
+    padding: 2%;
+    margin: 0 auto;
+    border: black solid 1px;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+div.col1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  div.col2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  div.red:after {
+    content: "";
+    display: table;
+    clear: both;
+      
+  }
+
+input[type=text], input[type=email], select, textarea {
+    width: 250px;
+    padding: 4px;
+    margin: 4px 0;
+    border: black solid 1px;
+    border-radius: 2px;
+    background-color: whitesmoke;
+    outline: none; 
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    padding: 10px 30px;
+    margin-right: 4%;
+    background-color: #99D9EA;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #7aabb8;
+  }
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+textarea {
+    resize: none;
+}
+
+section div#left{
+      width: 30%;
+      float: left;
+}
+
+section div#right{
+        width: 70%;
+        float: left;
+}
+
+form {
+    padding: 10% 6%;
+}
+
+
+/* ---o nama--- */
+
+main#onama {
+    height: 2000px;
+    position: relative;
+}
+
+
+article {
+    width: 70%;
+    height: 1850px;
+    padding: 4%;
+    border: black solid 1px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+    left: 0;
+
+}
+
+aside {
+    width: 30%;
+    height: 1850px;
+    padding: 4% 2%;
+    border: black solid 1px;
+    background-color: #99D9EA;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+div#fixed {
+    position: fixed;
+    top: 25%;
+    left: 8%;
+}
+
+div#fixed img {
+    max-width: 15vw;
+}
+
+div.imgdiv {
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+img.imgimg {
+    max-width: 95%;
+    border: black solid 1px;
+
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+div.pos {
+    position: relative;
+    left: 10%;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+/* media */
+
+@media (max-width: 1100px)
+{
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1400px)
+{
+    div.col1, div.col2 {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    input[type=text], input[type=email], select, textarea {
+        width: 220px;
+    }
+
+    th, td {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1700px)
+{
+
+    p {
+        font-size: 0.9em;
+    }
+}
