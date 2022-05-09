@@ -11,7 +11,7 @@ The main requirements of the assignment were given as follows:
 - use only layout techniques learned so far in the class (positioning and float).
 - the choice of subject is free (I chose windsurfing, a sport I'm passionate about).
 
-Although not required by the assignment, I tried to make the webpage as visualy as appealing as I could, considering my limited proficiency with web design.
-
-
+Although not required by the assignment, I tried to make the webpage as visualy as appealing as I could, considering my limited proficiency with web design. 
+   
+   
 ![Screenshot of the webpage](web.png)
