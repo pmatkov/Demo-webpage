@@ -1,20 +1,13 @@
 
-html {
+body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
-    min-height: 100vh;
+header, footer, main {
     width: 50%;
     margin: 0 auto;
-    font-family: Verdana, Tahoma, sans-serif;
-}
-
-/* header: 160 px - 20 + 140  */
-
-header {
-    height: 160px;
 }
 
 header div#hdr_top {
@@ -22,42 +15,91 @@ header div#hdr_top {
     background-color: #536C8C;
     border-top: black solid 1px;
     border-bottom: black solid 1px;
-    box-sizing: border-box;
 }
 
 header div#hdr_bottom {
-    height: 140px;
     background-color: #7f9ec7;
     border-bottom: black solid 1px;
-    box-sizing: border-box;
+    overflow: auto;
 }
 
-/* navigacija i logo */
+main {
+    background-color: #B1DBF5;
+}
+
+/* logo */
+
+header #logo{
+    width: 45%;
+    float: right;
+}
+
+header #logo > h1{
+    width: max-content;
+    margin: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: rgba(14, 14, 49, 0.7);
+    text-shadow: 2px 2px #536C8C;;
+    float: right;
+}
+
+header #wrapper_icon {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    float: right;
+}
+
+header .h_icon {
+    padding: 10px;
+    font-size: 3em;
+    color:rgb(81, 186, 204);
+    text-shadow: 2px 2px darkslategray;
+    text-align: center;
+}
+
+section .s_icon {
+    font-size: 1.6em;
+    color:goldenrod;
+    text-shadow: 2px 2px #536C8C;
+    text-align: left;
+    padding-right: 10px;
+}
+
+section {
+    position: relative;
+    margin-top: 4%;
+}
+
+/* header navigacija */
 
 header nav {
-    width: 30%;
-    max-width: 160px;
-    height: 120px;
-    margin: 10px 2%;
-    float: left;
+    width: 55%;
+    padding: 20px 0;
     box-sizing: border-box;
+    float: left;
 }
 
 header nav ul {
-    width: 100%;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
 }
 
-header nav a:link, nav a:visited {
-    height: 20px;
-    margin-bottom: 4px;
-    padding: 8px;
+header nav li {
+    width: 20%;
+    float: left;
+}
+
+header nav a:link, header nav a:visited {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
     color: black;
     background-color: #99D9EA;
     border: black solid 1px;
-    text-decoration: none;
     display: block;
 }
 
@@ -65,68 +107,31 @@ header nav a:hover {
     background-color: #7aabb8;
 }
 
-
-header div#logo{
-    width: 50%;
-    height: 120px;
-    margin-right: 4%;
-    background-image: url('images/logo1.png');
-    background-size: 90%;
-    background-repeat: no-repeat;
-    float: right;
-}
-
-
-header div#icon{
-    width: 15%;
-    height: 120px;
-    background-image: url('images/icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    float: right;
-}
-
-header h1 {
-    margin: 0;
-    padding-left: 4%;
-    line-height: 120px;
-    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2.8em;
-    font-style: italic;
-}
-
-/* glavni dio */
-
-main {
-    height: 100%;
-    background-color: #B1DBF5;
-}
+/* main navigacija */
 
 main nav {
-    height: 40px;
-    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
 }
 
 main nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-main nav li {
-    width: 130px;
     float: right;
 }
 
+main nav li {
+    margin-left: 5px;
+    float: left;
+}
+
 main nav a:link, main nav a:visited {
-    height: 16px;
-    margin-top: 2px;
-    margin-right: 5px;
-    padding: 10px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
-    border: black solid 1px;
     color: black;
+    border: black solid 1px;
     display: block;
 }
 
@@ -134,288 +139,234 @@ main nav a:hover {
     background-color: #7aabb8;
 }
 
-/* Prva skecija */
 
-section#first {
-    height: 740px;
+/* Povijest - prvi dio */
+
+#history1 {
+    padding: 25px 0;
 }
 
-section#first div.d1{
+#history1 div.d1{
     width: 55%;
     height: 280px;
     border: black solid 1px;
     background-color: #99D9EA;
-    box-sizing: border-box;
     position: relative;
     top: 2%;
     left: -6%;
 }
 
-section#first div.d2{
+#history1 div.d2{
     width: 35%;
-    height: 640px;
     box-sizing: border-box;
     position: absolute;
-    top: 8%;
+    top: 16%;
     right: -4%;
 }
 
-section#first div.d3{
+#history1 div.d3{
     width: 55%;
     height: 300px;
     border: black solid 1px;
     background-color: #7f9ec7;
-    box-sizing: border-box;
     position: relative;
     top: 6%;
 }
 
-div.d2a {
-    padding: 2%;
-    box-sizing: border-box;
+div.d2, div.d2a {
+    padding: 5px 0;
 }
 
-section#first div.d2a1 {
-    height: 52%;
-    margin-bottom: 2%;
+/* Povijest - drugi dio */
+
+#history2 {
+    padding: 25px 0;
 }
 
-section#first div.d2a2 {
-    height: 44%;
-    margin-bottom: 2%;
-}
-
-/* Druga skecija */
-
-section#second {
-    height: 750px;
-}
-
-section#second div.d1{
+#history2 div.d1{
     width: 50%;
     height: 310px;
-    margin-top: 2%;
     border: black solid 1px;
     background-color: #99D9EA;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    right: -6%;
-}
-
-section#second div.d2{
-    width: 56%;
-    height: 660px;
-    box-sizing: border-box;
     position: relative;
-    top: -4%;
-    left: -8%;
+    top: 8%;
+    right: -50%;
 }
 
-section#second div.d3{
-    width: 52%;
-    height: 280px;
+#history2 div.d2{
+    width: 56%;
+    position: absolute;
+    top: 12%;
+    left: -10%;
+}
+
+#history2 div.d3{
+    width: 56%;
+    height: 320px;
     border: black solid 1px;
     background-color: #7f9ec7;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 10%;
-    right: 0;
+    position: relative;
+    right: -50%;
 }
 
-section#second div.d2a1 {
-    height: 48%;
-    margin-bottom: 2%;
+/* Discipline - prvi dio */
+
+#disciplines1 {
+    padding: 25px 0;
 }
 
-section#second div.d2a2 {
-    height: 48%;
-}
-
-/* Treca skecija */
-
-section#third {
-    height: 750px;
-}
-
-
-section#third div.d1{
+#disciplines1 div.d1{
     width: 40%;
     height: 440px;
     margin-top: 2%;
     border: black solid 1px;
     background-color: #99D9EA;
-    box-sizing: border-box;
     position: relative;
     top: 0;
     left: -6%;
 }
 
-section#third div.d2{
+#disciplines1 div.d2{
     width: 56%;
-    height: 650px;
-    box-sizing: border-box;
     position: absolute;
-    top: 0;
-    right: -8%;
+    top: 12%;
+    right: -10%;
 }
 
-section#third div.d3{
+#disciplines1 div.d3{
     width: 50%;
     height: 270px;
     border: black solid 1px;
     background-color: #7f9ec7;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    bottom: 8%;
 }
 
-section#third div.d2a1 {
-    height: 48%;
-    margin-bottom: 2%;
+/* Discipline - drugi dio */
+
+#disciplines2 {
+    padding: 25px 0;
 }
 
-section#third div.d2a2 {
-    height: 48%;
-    margin-bottom: 2%;
-}
-
-/* Cetvrta skecija */
-
-section#fourth {
-    height: 750px;
-}
-
-
-section#fourth div.d1{
+#disciplines2 div.d1{
     width: 34%;
     height: 445px;
     margin-top: 2%;
     border: black solid 1px;
     background-color: #99D9EA;
-    box-sizing: border-box;
-    float: right;
+    position: relative;
+    top: 2%;
+    right: 0;
 }
 
-section#fourth div.d2{
+#disciplines2 div.d2{
     width: 50%;
     height: 650px;
-    box-sizing: border-box;
     position: absolute;
-    top: 0;
-    left: -8%;
+    top: 2%;
+    right: -8%;
 }
 
-section#fourth div.d3{
+#disciplines2 div.d3{
     width: 52%;
     height: 300px;
     border: black solid 1px;
     background-color: #7f9ec7;
-    box-sizing: border-box;
-    position: absolute;
-    right: 4%;
-    bottom: 6%;
+    position: relative;
+    left: -4%;
 }
 
-section#fourth div.d2a1 {
+#disciplines2 div.d2a1 {
     height: 48%;
     margin-bottom: 2%;
 }
 
-section#fourth div.d2a2 {
+#disciplines2 div.d2a2 {
     height: 48%;
     margin-bottom: 2%;
 }
 
-/* Peta skecija */
+/* Destinacije - prvi dio */
 
-section#fifth {
-    height: 800px;
+#destinations1 {
+    padding: 25px 0;
 }
 
-section#fifth div.d1{
+#destinations1 div.d1{
     width: 38%;
     height: 445px;
     margin-top: 2%;
     border: black solid 1px;
     background-color: #99D9EA;
-    box-sizing: border-box;
-    position: absolute;
+    position: relative;
     top: 4%;
-    left: -2%;
 }
 
-section#fifth div.d2{
+#destinations1 div.d2{
     width: 50%;
     height: 660px;
-    box-sizing: border-box;
-    float: right;
+    position: absolute;
+    right: -4%;
+    bottom: 8%;
 }
 
-section#fifth div.d3{
+#destinations1 div.d3{
     width: 52%;
     height: 270px;
     border: black solid 1px;
     background-color: #7f9ec7;
-    box-sizing: border-box;
-    position: absolute;
-    left: -6%;
-    bottom: 8%;
+    position: relative;
+    left: -4%;
 }
 
-section#fifth div.d2a1 {
+#destinations1 div.d2a1 {
     height: 48%;
     margin-bottom: 2%;
 }
 
-section#fifth div.d2a2 {
+#destinations1 div.d2a2 {
     height: 48%;
     margin-bottom: 2%;
 }
 
-/* Peta skecija */
+/* Destinacije - drugi dio */
 
-section#sixth {
-    height: 750px;
+#destinations2 {
+    padding: 25px 0;
 }
 
-section#sixth div.d1{
+#destinations2 div.d1{
     width: 38%;
     height: 445px;
     margin-top: 2%;
     border: black solid 1px;
     background-color: #99D9EA;
-    box-sizing: border-box;
+    position: relative;
+    top: 6%;
+    right: -64%;
+}
+
+#destinations2 div.d2{
+    width: 50%;
+    height: 660px;
     position: absolute;
-    top: 4%;
+    top: 6%;
     left: -2%;
 }
 
-section#sixth div.d2{
-    width: 50%;
-    height: 660px;
-    box-sizing: border-box;
-    float: right;
-}
-
-section#sixth div.d3{
+#destinations2 div.d3{
     width: 52%;
     height: 270px;
     border: black solid 1px;
     background-color: #7f9ec7;
-    box-sizing: border-box;
-    position: absolute;
-    left: -6%;
-    bottom: 8%;
+    position: relative;
+    right: -56%;
 }
 
-section#sixth div.d2a1 {
+#destinations2 div.d2a1 {
     height: 48%;
     margin-bottom: 2%;
 }
 
-section#sixth div.d2a2 {
+#destinations2 div.d2a2 {
     height: 48%;
     margin-bottom: 2%;
 }
@@ -426,119 +377,105 @@ footer {
     height: 60px;
 }
 
-footer div#bottom {
+footer > div {
     background-color: #536C8C;
     border-bottom: black solid 1px;
-    box-sizing: border-box;
+
 }
 
-footer p {
+footer div > p {
     margin: 0;
     padding: 20px;
     color: whitesmoke;
     text-align: center;
 }
 
-
 /* slike */
 
-div.d2 img {
+.d2 img {
     border: black solid 1px;
     box-sizing: border-box;
     filter: drop-shadow(2px 2px 2px black);
 }
 
-section#first img.im1 {
+#history1 .img1 {
     max-width: 100%;
     margin-bottom: 2%;
 }
 
-section#first img.im2{
+#history1 .img2{
     max-width: 75%;
-    margin-left: 6%;
-}
-
-section#second img.im1 {
-    max-width: 58%;
-}
-
-section#second img.im2 {
-    max-width: 32%;
     float: right;
 }
 
-section#second img.im3 {
+#history2 .img1 {
     max-width: 58%;
-    margin-left: 18%;
 }
 
-section#third img.im1 {
+#history2 .img2 {
+    max-width: 34%;
+    float: right;
+}
+
+#history2 .img3 {
+    max-width: 68%;
+    margin-top: 5%;
+}
+
+#disciplines1 .img1 {
     max-width: 50%;
 }
 
-section#third img.im2 {
+#disciplines1 .img2 {
     float: right;
     max-width: 45%;
 }
 
-section#third img.im3 {
+#disciplines1 .img3 {
     max-width: 55%;
-    margin-right: 16%;
-    float: right;
+    margin-top: 5%;
+    margin-left: 15%;
 }
 
-section#fourth img.im1 {
+#disciplines2 .img1 {
     max-width: 90%;
+    margin-right: 6%;
     float: right;
 }
 
-section#fourth img.im2 {
+#disciplines2 .img2 {
     max-width: 62%;
 }
 
-section#fifth img.im1 {
+#destinations1 .img1 {
     max-width: 62%;
     margin-left: 6%;
 }
 
-section#fifth img.im2 {
+#destinations1 .img2 {
     max-width: 68%;
     margin-right: 4%;
     float: right;
 }
 
-
-section#sixth img.im1 {
+#destinations2 .img1 {
     max-width: 85%;
 }
 
-section#sixth img.im2 {
+#destinations2 .img2 {
     max-width: 75%;
-    margin-right: 4%;
+    margin-right: 8%;
     float: right;
 }
 
 
-section {
-    position: relative; 
-}
-
-section#first, section#third, section#fifth {
-    margin-top: 4%;
-}
-
-section#second, section#fourth {
-    margin-top: 2%;
-}
-
-h4 {
+h2, h3, h4, h5 {
     margin-left: 5px;
+    font-family: 'Questrial', sans-serif;
 }
-
 
 h4.special {
     padding-left: 2%;
-    font-weight: normal;
 }
 
 p {
@@ -548,34 +485,26 @@ p {
 
 /* linkovi */
 
-a {
+main a {
     color: black;
-    text-decoration: none;
-}
-
-a:hover {
-
-    text-decoration: underline;
-}
-
-
-header a {
     font-style: italic;
 }
 
-main a {
-    font-family: 'Courier New', Courier, monospace;
+main a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 /* tablica */
 
-table#center {
-    margin: 0 auto;
-}
-
 table {
+    margin: 0 auto;
     border: 1px solid;
     border-spacing: 0;
+}
+
+thead th {
+    padding: 10px;
 }
 
 th, td {
@@ -583,16 +512,11 @@ th, td {
     border: 1px solid;
 }
 
-thead th {
-    padding: 10px;
-
-}
-
-tr.diff {
+tr.special {
     background-color: whitesmoke;
 }
 
-td.right {
+td.right_col {
     text-align: right;
 }
 
@@ -610,7 +534,86 @@ caption {
     padding: 14px;
 }
 
-/* ---kontakt--- */
+
+/* o nama */
+
+main#about_us {
+    height: 2400px;
+    position: relative;
+}
+
+section#about_us  {
+    width: 70%;
+    margin: 0;
+    padding: 4%;
+    border-top: black solid 1px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+aside#about_us  {
+    height: 2250px;
+    width: 30%;
+    padding: 4% 2%;
+    border-top: black solid 1px;
+    border-left: black solid 1px;
+    background-color: #99D9EA;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+main nav a:hover {
+    background-color: #7aabb8;
+}
+
+div#video {
+    position: absolute;
+    bottom: 100px;
+    left: 130px;
+}
+
+div#video > iframe {
+    width: 500px;
+    height: 375px;
+}
+
+div#fixed {
+    position: fixed;
+    top: 25%;
+    left: 8%;
+}
+
+div#fixed > img {
+    max-width: 15vw;
+}
+
+figure {
+    padding: 2%;
+}
+
+figure#pos {
+    position: relative;
+    left: 2%;
+}
+
+.about_us_img {
+    max-width: 95%;
+    border: black solid 1px;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+
+hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+/* kontakt */
 
 main#kontakt {
     min-height: 1800px;
@@ -620,7 +623,7 @@ address {
       padding: 6% 10%;
 }
 
-section#forma {
+section#form {
     width: 70%;
     padding: 2%;
     margin: 0 auto;
@@ -631,24 +634,29 @@ section#forma {
     overflow: auto;
 }
 
+h3#kontakt {
+    padding: 0;
+    margin-left: 0;
+    font-style: normal;
+}
+
 div.col1 {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
   
-  div.col2 {
+div.col2 {
     float: left;
     width: 75%;
     margin-top: 6px;
-  }
+}
 
-  div.red:after {
+div.row:after {
     content: "";
     display: table;
     clear: both;
-      
-  }
+}
 
 input[type=text], input[type=email], select, textarea {
     width: 250px;
@@ -674,7 +682,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #7aabb8;
-  }
+}
 
 label {
     padding: 12px 12px 12px 0;
@@ -699,74 +707,236 @@ form {
     padding: 10% 6%;
 }
 
-
-/* ---o nama--- */
-
-main#onama {
-    height: 2000px;
-    position: relative;
+div#map {
+    width: fit-content;
+    padding-top: 150px;
+    margin: auto;
 }
 
-
-article {
-    width: 70%;
-    height: 1850px;
-    padding: 4%;
-    border-top: black solid 1px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 150px;
-    left: 0;
-
+div#map >iframe {
+    width: 600px;
+    height: 450px;
 }
 
-aside {
-    width: 30%;
-    height: 1850px;
-    padding: 4% 2%;
-    border-top: black solid 1px;
-    border-left: black solid 1px;
-    background-color: #99D9EA;
-    box-sizing: border-box;
-    position: absolute;
-    top: 150px;
-    right: 0;
+/* novosti */
+
+.container {
+    max-width: 1000px;
 }
 
-div#fixed {
-    position: fixed;
-    top: 25%;
-    left: 8%;
+#art1_news, #art2_news {
+    padding: 30px 0;
 }
 
-div#fixed img {
-    max-width: 15vw;
+#art1_news h3, #art2_news h5 {
+    padding: 25px 0;
 }
 
-div.imgdiv {
-    padding: 2%;
-    box-sizing: border-box;
+#art2_news h5 {
+    min-height: 80px;
 }
 
-img.imgimg {
-    max-width: 95%;
+#art2_news p {
+    padding: 10px 0 0 0;
+}
+
+#art2_news p#category {
+    padding: 5px 0;
+    font-family: 'IBM Plex Mono', monospace;
+    color: goldenrod;
+    text-shadow: 1px 1px black;
+}
+
+#art2_news a{
+    font-weight: 600;
+    font-style: normal;
+}
+
+img.blog {
+    max-width:  100%;
     border: black solid 1px;
-
-    filter: drop-shadow(2px 2px 2px black);
 }
 
-div.pos {
-    position: relative;
-    left: 10%;
+nav#category ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: none;
 }
 
-hr {
-    height: 1px;
-    background-color: black;
+nav#category ul#outside {
+    min-width: 150px;
+    padding: 10px;
+    border: black solid 1px;
+    border-radius: 10px;
+    float: right;
+}
+
+nav#category li {
+    margin-right: 5px;
+    color: goldenrod;
+    text-shadow: 1px 1px black;
+    float: left;
+}
+
+nav#category a:link, nav#category a:visited {
+    padding: 2px 5px 2px 15px;
+    text-shadow: none;
+    text-align: left;
+    text-decoration: none;
+    font-style: normal;
     border: none;
+    display: block;
+}
+
+nav#category a:hover {
+    text-decoration: underline;
+    background-color: initial;
+}
+
+ul.dropdown {
+    display: none;
+    position: absolute;
+    min-width: fit-content;
+    z-index: 1;
+    background-color:#B1DBF5;
+    border: black solid 1px;
+}
+
+nav#category ul li:hover {
+    cursor: pointer;
+}
+
+nav#category ul li:hover ul.dropdown {
+    padding-top: 2px;
+    display: block;
+    background-color: #99D9EA;
+}
+
+nav#category ul.dropdown li {
+    float: none;
+}
+
+/* trgovina */
+
+.container_flex {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex1 {
+    margin-left: 2px;
+}
+
+
+div#banner {
+    flex: 1;
+    padding: 80px 0;
+    background-image: url('images/banner.png');
+}
+
+h3.shop {
+    padding-left: 15px;
+}
+
+h2.discount {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 35px;
+    background-color: white;
+    border: black solid 1px;
+    transform: rotate(-10deg);
+    position: relative;
+    top: 20px;
+    left: -35px;
+}
+
+h3.discount {
+    width: fit-content;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: #7f9ec7;
+}
+
+h2.discount > span {
+    font-weight: bold;
+    color: rgb(211, 18, 18);
+}
+
+h4.name {
+    margin: 5px 0 0 0;
+    padding: 20px 5px;
+    text-align: center;
+}
+
+.container_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.item2 {
+    flex: 1 1 40%;
+}
+
+.item3 {
+    flex: 1 1 60%;
+}
+
+h5.price, h5.new_price {
+    padding: 5px 10px;
+    margin: 0;
+    text-align: right;
+}
+
+div.item {
+   flex: 1 1 32%;
+   margin-top: 2px;
+   margin-right: 2px;
+   background-color: white;
+}
+
+img.shop {
+    max-width: 100%;
+    max-height: 250px;
+    display: block;
+    margin: auto;
+}
+
+.button {
+    margin: 5px 5px 5px 10px;
+    padding: 5px;
+    border: black solid 1px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: white;
+}
+
+.button:hover {
+    background-color:#99D9EA;
+    border: goldenrod solid 1px;
+    transition: background-color 0.3s linear, border 0.3s ease-in;
 }
 
 /* media */
+
+
+@media (max-width: 670px)
+{
+    div.item {
+        flex: 1 1 100%;
+     }
+
+    input[type=text], input[type=email], select, textarea {
+        width: 30px;
+    }
+ 
+}
+
 
 @media (max-width: 1100px)
 {
@@ -776,8 +946,59 @@ hr {
     }
 }
 
-@media (max-width: 1400px)
+@media (max-width: 1600px)
 {
+
+    header #logo{
+        width: 100%;
+        float: none;
+    }
+
+    header #logo > h1{
+        margin: auto;
+        float: none;
+    }
+
+    header #wrapper_icon {
+        margin: auto;
+        float: none;
+    }
+
+    header nav {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+    
+    header nav li {
+        width: 92%;
+        margin: 0 auto 4px;
+        float: none;
+    }
+    
+    main nav ul {
+        width: 100%;
+        clear: both;
+    }
+    
+    main nav li {
+        width: 33.3%;
+        margin: 0;
+        float: left;
+    }
+
+    nav#category li {
+        width: 48%;
+    }
+
+    nav#category ul.dropdown {
+        width: initial;
+    }
+
+    nav#category ul.dropdown li {
+        width: initial;
+    }
+
     div.col1, div.col2 {
         width: 100%;
         margin-top: 0;
@@ -793,8 +1014,50 @@ hr {
     }
 }
 
-@media (max-width: 1700px)
+
+@media (max-width: 1750px)
 {
+
+    header .h_icon {
+        font-size: 2.3em;
+    }
+}
+
+@media (max-width: 1850px)
+{
+
+    div#video {
+        left: 80px;
+    }
+
+    div#video > iframe {
+
+        width: 380px;
+        height: 285px;
+    }
+
+    div#map > iframe {
+        width: 430px;
+        height: 320px;
+    }
+
+    header #logo > h1 {
+        font-size: 2.3em;
+    }
+}
+
+
+@media (min-width: 1751px) and (max-width: 1900px)
+{
+
+    header #logo > h1 {
+        font-size: 2.7em;
+    }
+
+    header .h_icon {
+        font-size: 2.7em;
+    }
+
 
     p {
         font-size: 0.9em;
