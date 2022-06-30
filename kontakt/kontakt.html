@@ -5,6 +5,11 @@
         <meta name="author" content="Prosper Matković"/>
         <meta name="google" content="notranslate" />
         <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Permanent+Marker&family=Questrial&family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5e8ccfe13a.js" crossorigin="anonymous"></script>
+        
         <title>Kontakt</title>
     </head>
 
@@ -12,109 +17,113 @@
 
         <header>
             <div id="hdr_top"></div>
-
             <div id="hdr_bottom">
+                <div id="logo">
+                    <h1>Windsurfing</h1>
+                    <div id="wrapper_icon"><i class="fa-solid fa-water h_icon"></i></div>
+                </div>
                 <nav>
                     <ul>
                         <li><a href="../index.html">Naslovnica</a></li>
+                        <li><a href="../novosti.html">Novosti</a></li>
+                        <li><a href="../trgovina.html">Trgovina</a></li>
                         <li><a href="../onama.html">O nama</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="kontakt/kontakt.html">Kontakt</a></li>
                     </ul>
                 </nav>
-                <div id="icon">
-                </div>
-                <div id="logo">
-                </div>
             </div>
 
         </header>
         <main id="kontakt">
             <address>
-                <b><span style="font-style: normal;">Windsurfing centar</span></b><br></br>
+                <h3 id="kontakt">Windsurfing centar</h3>
                 Ulica bez broja<br>
                 10000 Zagreb<br>
                 Hrvatska<br>
                 Tel: 0800 240 420<br><br>
-                <a style="font-style: normal;" href="mailto:prosper.matkovc@tvz.hr?subject=Želim%20postati%20surfer&body=Poruka">Pošalji e-mail</a><br>
+                <a href="mailto:prosper.matkovc@tvz.hr?subject=Želim%20postati%20surfer&body=Poruka">Pošalji e-mail</a><br>
             </address>
-                <section id="forma">
-                    <div id="left">
-                        <h4>Kontaktirajte nas:</h4>
-                    </div>
-                    <div id="right">
-                        <form>
-                            <div class="red">
-                                <div class="col1">
-                                    <label>Ime:</label>
-                                </div>
-                                <div class="col2">
-                                    <input type="text" name="ime"/>
-                                </div>
+            <section id="form">
+                <div id="left">
+                    <h4>Kontaktirajte nas:</h4>
+                </div>
+                <div id="right">
+                    <form>
+                        <div class="row">
+                            <div class="col1">
+                                <label>Ime:</label>
                             </div>
+                            <div class="col2">
+                                <input type="text" name="name"/>
+                            </div>
+                        </div>
 
-                            <div class="red">
-                                <div class="col1">
-                                    <label>Prezime:</label>
-                                </div>
-                                <div class="col2">
-                                    <input type="text" name="prezime"/>
-                                </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label>Prezime:</label>
                             </div>
+                            <div class="col2">
+                                <input type="text" name="surname"/>
+                            </div>
+                        </div>
 
-                            <div class="red">
-                                <div class="col1">
-                                    <label>Spol:</label>
-                                </div>
-                                <div class="col2">
-                                    <label><input type="radio" value="musko" name="spol"/>Muški</label>
-                                    <label><input type="radio" value="zensko" name="spol"/>Ženski</label>
-                                </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label>Spol:</label>
                             </div>
+                            <div class="col2">
+                                <label><input type="radio" value="male" name="sex"/>Muški</label>
+                                <label><input type="radio" value="female" name="sex"/>Ženski</label>
+                            </div>
+                        </div>
 
-                            <div class="red">
-                                <div class="col1">
-                                    <label>E-mail:</label>
-                                </div>
-                                <div class="col2">
-                                    <input type="email" name="email" required/>
-                                </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label>E-mail:</label>
                             </div>
+                            <div class="col2">
+                                <input type="email" name="email" required/>
+                            </div>
+                        </div>
 
-                            <div class="red">
-                                <div class="col1">
-                                    <label>Sport:</label>
-                                </div>
-                                <div class="col2">
-                                    <select name="sport">
-                                        <option value="0" disabled="disabled" selected>Odaberite...</option>
-                                        <option value="windsurfing">Windsurfing</option>
-                                        <option value="kitesurfing">Kitesurfing</option>
-                                        <option value="jedrenje">Jedrenje</option>
-                                        <option value="drugo">Nešto drugo</option>
-                                    </select>
+                        <div class="row">
+                            <div class="col1">
+                                <label>Sport:</label>
+                            </div>
+                            <div class="col2">
+                                <select name="sport">
+                                    <option value="0" disabled="disabled" selected>Odaberite...</option>
+                                    <option value="windsurfing">Windsurfing</option>
+                                    <option value="kitesurfing">Kitesurfing</option>
+                                    <option value="jedrenje">Jedrenje</option>
+                                    <option value="drugo">Nešto drugo</option>
+                                </select>
 
-                                </div>
                             </div>
-                            <div class="red">
-                                <div class="col1">
-                                    <label>Poruka:</label>
-                                </div>
-                                <div class="col2">
-                                    <textarea name="poruka" placeholder="Napišite poruku.." style="height: 100px;"></textarea>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label>Poruka:</label>
                             </div>
-                            <br/>
-                            <div class="red">
-                                <input type="submit" name="send" value="Pošalji"/>
+                            <div class="col2">
+                                <textarea name="poruka" placeholder="Napišite poruku.." style="height: 100px;"></textarea>
                             </div>
-                                                    
-                         </form>
-                    </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <input type="submit" name="send" value="Pošalji"/>
+                        </div>                   
+                        </form>
+                </div>
 
-                </section>
+            </section>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4557.32927207884!2d16.63680263254545!3d43.25573886043444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a853f9e86b1bd%3A0x5ffe9d5e14a346ba!2sWatersports%20Bol!5e1!3m2!1sen!2shr!4v1655217268950!5m2!1sen!2shr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            
         </main>
         <footer>
-            <div id="bottom">
+            <div>
                 <p>Prosper Matković JMBAG: 0661023833</p>
             </div>
 
